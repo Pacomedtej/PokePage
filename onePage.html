@@ -21,11 +21,6 @@
             position: absolute;
             bottom: -23px;
             right: -75px;
-            & img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
         }
 
         @media screen and (max-width: 1280px) {
@@ -72,7 +67,7 @@
 
     <main id="app">
         <!-- Showcase -->
-        <div class="showcase w-100 text-bg-primary">
+        <section id="showcase" class="showcase w-100 text-bg-primary">
             <div class="container">
                 <div class="row py-5">
                     <div class="col-md-6 d-flex flex-column justify-content-center">
@@ -83,7 +78,7 @@
                     <div class="col-md-6">
                         <div class="card bg-white card-pokemon">
                             <picture class="picture-pokemon">
-                                <img loading="lazy" width="200" height="300" :src="pokemonImages[selectedPokemon].url" alt="">
+                                <img class="img-fluid" loading="lazy" width="200" height="300" :src="pokemonImages[selectedPokemon].url" alt="">
                             </picture>
                             <div class="card-body my-3">
                                 <div class="text-center mb-3 fs-4 fw-bold">Contacta al Profesor Oak</div>
@@ -122,7 +117,50 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Features -->
+        <section id="features" class="w-100 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <h2 class="text-capitalize fw-light">Más que un <span class="fw-bold">compañero de aventuras</span></h2>
+                        <p class="text-center text-muted">Los Pokémon son importantes porque fomentan la amistad y la cooperación, brindan compañía, inspiran aventuras emocionantes y enseñan lecciones valiosas sobre el trabajo en equipo y la superación personal.</p>
+                    </div>
+                </div>
+                <div class="row py-5">
+                    <div class="col-lg-6">
+                        <h3 class="pb-3 fw-light">Comer panqueques y <span class="fw-bold">ganar medallas</span></h3>
+                        <div class="d-flex align-items-start gap-4 pb-3">
+                            <i class="fas fa-hamburger fa-3x text-primary"></i>
+                            <div>
+                                <h5 class="fw-bold">Compartir comidas favoritas</h5>
+                                <p class="text-muted">Disfrutar juntos de momentos simples como compartir panqueques en el desayuno fortalece el vínculo entre entrenador y Pokémon.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start gap-4 pb-3">
+                            <i class="fas fa-shield fa-3x text-primary"></i>
+                            <div>
+                                <h5 class="fw-bold">Superar desafíos juntos</h5>
+                                <p class="text-muted">Desde entrenar duro hasta enfrentarse a rivales, cada desafío superado refuerza la conexión entre el entrenador y su Pokémon.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start gap-4 pb-3">
+                            <i class="fas fa-trophy fa-3x text-primary"></i>
+                            <div>
+                                <h5 class="fw-bold">Celebrar logros compartidos</h5>
+                                <p class="text-muted">Ganar medallas en batallas Pokémon o competiciones fortalece el sentido de logro y la unión entre el entrenador y su fiel compañero.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <picture>
+                            <img class="img-fluid rounded-2" src="https://www.slashfilm.com/img/gallery/why-pokemon-can-survive-without-ash-ketchum/l-intro-1671590841.jpg" alt="Ash Ketchum y Pikachu">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 
