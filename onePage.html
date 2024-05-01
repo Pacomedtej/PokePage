@@ -43,6 +43,17 @@
                 width: 130px;
             }
         }
+        .showcase{
+            /* background-image: url("https://c4.wallpaperflare.com/wallpaper/503/189/157/pokemon-video-games-pixel-art-pixels-wallpaper-thumb.jpg"); */
+            background-image: url(img/Pokemon/Pokemon_road.mp4);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .text-shadow{
+            text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.651);
+        }
     </style>
 </head>
 <body>
@@ -70,7 +81,7 @@
         <section id="showcase" class="showcase w-100 text-bg-primary">
             <div class="container">
                 <div class="row py-5">
-                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <div class="col-md-6 d-flex flex-column justify-content-center text-shadow">
                         <p v-if="trainerName != ''" class="fs-1 fw-2 mb-0">{{trainerName}}, bienvenido a</p>
                         <h1 class="display-4 mb-3 fw-3"><span class="fw-bold">Pokémon,</span> elige a tu mejor Amigo</h1>
                         <p class="lead">Los Pokémon son excelentes compañeros debido a su lealtad, diversidad, habilidades únicas, y la capacidad de formar vínculos especiales con sus entrenadores.</p>
@@ -108,6 +119,7 @@
                                             <option selected value="Pikachu">Pikachu</option>
                                             <option value="Squirtle">Squirtle</option>
                                             <option value="Oshawott">Oshawott</option>
+                                            <option value="Charmander">Charmander</option>
                                         </select>
                                     </div>
                                     <input type="submit" class="btn btn-dark w-100 mt-2">
@@ -131,32 +143,41 @@
                 <div class="row py-5">
                     <div class="col-lg-6">
                         <h3 class="pb-3 fw-light">Comer panqueques y <span class="fw-bold">ganar medallas</span></h3>
-                        <div class="d-flex align-items-start gap-4 mb-3">
-                            <i class="fas fa-hamburger fa-3x text-primary"></i>
-                            <div>
+                        <div class="row mb-3">
+                            <picture class="col-2 px-sm-0 px-md-3">
+                                <img class="img-fluid" src="img/Custom/Waffles.png" alt="">
+                            </picture>
+                            <div class="col-10">
                                 <h5 class="fw-bold">Compartir comidas favoritas</h5>
                                 <p class="text-muted">Disfrutar juntos de momentos simples como compartir panqueques en el desayuno fortalece el vínculo entre entrenador y Pokémon.</p>
                             </div>
                         </div>
-                        <div class="d-flex align-items-start gap-4 mb-3">
-                            <i class="fas fa-shield fa-3x text-primary"></i>
-                            <div>
+                        <div class="row mb-3">
+                            <picture class="col-2 px-sm-0 px-md-3">
+                                <img class="img-fluid" src="img/Custom/Exclamation_mark.png" alt="">
+                            </picture>
+                            <div class="col-10">
                                 <h5 class="fw-bold">Superar desafíos juntos</h5>
                                 <p class="text-muted">Desde entrenar duro hasta enfrentarse a rivales, cada desafío superado refuerza la conexión entre el entrenador y su Pokémon.</p>
                             </div>
                         </div>
-                        <div class="d-flex align-items-start gap-4 mb-3">
-                            <i class="fas fa-trophy fa-3x text-primary"></i>
-                            <div>
+                        <div class="row mb-3">
+                            <picture class="col-2 px-sm-0 px-md-3">
+                                <img class="img-fluid" src="img/Custom/Medalla_Roca.png" alt="">
+                            </picture>
+                            <div class="col-10">
                                 <h5 class="fw-bold">Celebrar logros compartidos</h5>
                                 <p class="text-muted">Ganar medallas en batallas Pokémon o competiciones fortalece el sentido de logro y la unión entre el entrenador y su fiel compañero.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 d-flex align-items-center">
-                        <picture>
+                        <!-- <picture>
                             <img class="img-fluid rounded-2" src="https://www.slashfilm.com/img/gallery/why-pokemon-can-survive-without-ash-ketchum/l-intro-1671590841.jpg" alt="Ash Ketchum y Pikachu">
-                        </picture>
+                        </picture> -->
+                        <video class="img-fluid rounded-2" autoplay muted loop>
+                            <source src="img/Pokemon/Pokemon_road.mp4">
+                        </video>
                     </div>
                 </div>
             </div>
@@ -276,6 +297,9 @@
                 },
                 "Oshawott": {
                     "url": "https://i.gifer.com/23xi.gif"
+                },
+                "Charmander": {
+                    "url": "https://pa1.aminoapps.com/6777/acc878aee328657849329f25d55198da55da639f_hq.gif"
                 }
             }
         },
