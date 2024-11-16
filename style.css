@@ -1,0 +1,48 @@
+.uppercase {
+    text-transform: uppercase;
+}
+.card-pokemon {
+    position: relative;
+}
+.picture-pokemon{
+    width: 150px;
+    position: absolute;
+    bottom: -23px;
+    right: -75px;
+}
+
+@media screen and (max-width: 1280px) {
+    .picture-pokemon{
+        right: -40px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .picture-pokemon{
+        right: -20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .picture-pokemon{
+        right: -6px;
+    }
+}
+@media screen and (max-width: 615px) {
+    .picture-pokemon{
+        width: 130px;
+    }
+}
+.showcase{
+    background-image: url("https://get.wallhere.com/photo/Latias-pixel-art-clouds-pokemon-anime-Pok-mon-trainers-pixels-1359343.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-shadow{
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.651);
+}
+
+.navbar-scrolled{
+    backdrop-filter: blur(5px);
+    background-color: #fff !important;
+}
